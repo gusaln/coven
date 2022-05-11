@@ -12,10 +12,10 @@ $ coven <file>
 
 ![coven demo gif](assets/coven-demo.gif "coven in action")
 
-The editor shows three columns - the line addresses in hexadecimal, the bytes, and the ASCII characters of said bytes if one can be printed.
-The program paginates the file in 256-byte segments or _pages_, having 16 byte per row and 16 rows.
+The editor shows three columns - the line addresses in hexadecimal, the bytes, and the ASCII characters of said bytes if there are a printable characters for those bytes.
+The program paginates the file in 256-byte segments or _pages_, having 16 bytes per row and 16 rows.
 If there are not enough bytes to fill a page, the page will be padded with zeros.
-At the bottom, the editor shows in which age you are and how many pages are left.
+At the bottom the editor shows in which age you are and how many pages are left.
 
 Although the program can be used to explore files of any size, _be cautious when editing big files_.
 While navigating a file, the editor will only hold the contents of the current page in memory.
